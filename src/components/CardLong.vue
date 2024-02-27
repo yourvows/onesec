@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div
-      class="flex gap-5 justify-between px-11 py-7 text-white rounded-3xl border border-solid backdrop-blur-[2px] bg-black bg-opacity-50 border-white border-opacity-70"
+      class="flex gap-5 bg-transparent justify-between px-11 py-7 text-white rounded-3xl border border-solid backdrop-blur-[5px] bg-black bg-opacity-50 border-white border-opacity-70"
   >
     <img
         alt="onesec-logo-sm"

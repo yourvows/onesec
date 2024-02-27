@@ -60,8 +60,8 @@ const dataForLong: { title: string, description: string, img: string }[] = [
 </script>
 
 <template>
-  <div class="container px-2 bg-gradient-to-r to-indigo-950 from-black flex flex-col items-center justify-center z-50">
-    <div class="mt-24"><img src="@/assets/onesec-logo.svg" alt="onesec logo"></div>
+  <div class="container mx-auto px-2 bg-gradient-to-r to-indigo-950 from-black flex flex-col items-center justify-center">
+    <div class="mt-20"><img src="@/assets/onesec-logo.svg" alt="onesec logo"></div>
 
     <div class="mb-12">
       <div class="relative self-center mt-14 text-4xl font-bold text-center text-white whitespace-nowrap">

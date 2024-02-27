@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Moula Thin Ita';
-    src: url('@/assets/fonts/Moula/Moula-ThinItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
+
 
 @font-face {
     font-family: 'Moula';
@@ -25,14 +18,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Moula Black Ita';
-    src: url('@/assets/fonts/Moula/Moula-BlackItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Moula';
@@ -53,15 +38,6 @@
 }
 
 @font-face {
-    font-family: 'Moula Ita';
-    src: url('@/assets/fonts/Moula/Moula-BoldItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Moula ExtLt';
     src: url('@/assets/fonts/Moula/Moula-ExtraLight.woff2') format('woff2'),
     url('@/assets/fonts/Moula/Moula-ExtraLight.woff') format('woff');
@@ -70,14 +46,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Moula Ita';
-    src: url('@/assets/fonts/Moula/Moula-Italic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Moula ExtBd';
@@ -88,32 +56,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Moula ExtBd Ita';
-    src: url('@/assets/fonts/Moula/Moula-ExtraBoldItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-ExtraBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Moula ExtLt Ita';
-    src: url('@/assets/fonts/Moula/Moula-ExtraLightItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Moula Med Ita';
-    src: url('@/assets/fonts/Moula/Moula-MediumItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Moula Med';
@@ -124,14 +66,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Moula Light Ita';
-    src: url('@/assets/fonts/Moula/Moula-LightItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Moula';
@@ -142,14 +76,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Moula SemBd Ita';
-    src: url('@/assets/fonts/Moula/Moula-SemiBoldItalic.woff2') format('woff2'),
-    url('@/assets/fonts/Moula/Moula-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Moula SemBd';
