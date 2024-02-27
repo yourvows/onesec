@@ -1,7 +1,17 @@
 <script setup lang="ts">
 import Card from '@/components/Card.vue'
-import oneSecLogo from '@/assets/onesec-logo-sm.png'
 import CardLong from "@/components/CardLong.vue";
+import {
+  telegramLogo,
+  youtubeLogo,
+  robotLogo,
+  oneSecLogo,
+  scamLogo,
+  tmailLogo,
+  mascanLogo,
+  upfileLogo,
+  uptimeLogo
+} from '@/assets/logo.ts'
 
 const dataForRect: { title: string, description: string, img: string }[] = [
   {
@@ -12,18 +22,41 @@ const dataForRect: { title: string, description: string, img: string }[] = [
   {
     title: 'YouTube',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: oneSecLogo
+    img: youtubeLogo
   },
   {
     title: 'Telegram',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: oneSecLogo
+    img: telegramLogo
   },
   {
     title: 'Telegram Bot',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: oneSecLogo
+    img: robotLogo
   }]
+const dataForLong: { title: string, description: string, img: string }[] = [
+  {
+    title: 'SiteUptime',
+    description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
+    img: uptimeLogo
+  }, {
+    title: 'Scam.uz',
+    description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
+    img: scamLogo
+  }, {
+    title: 'Malscan',
+    description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
+    img: mascanLogo
+  }, {
+    title: 'Tmail.uz',
+    description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
+    img: tmailLogo
+  }, {
+    title: 'Upfile',
+    description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
+    img: upfileLogo
+  }
+]
 </script>
 
 <template>
@@ -46,7 +79,7 @@ const dataForRect: { title: string, description: string, img: string }[] = [
     <div class="text-4xl font-bold text-center text-white py-12">Наши сервисы</div>
 
     <div class="space-y-6 last:mb-16">
-      <CardLong v-for="data in dataForRect" :title="data.title" :img="data.img" :description="data.description"/>
+      <CardLong v-for="data in dataForLong" :title="data.title" :img="data.img" :description="data.description"/>
     </div>
   </div>
 </template>
