@@ -3,11 +3,16 @@ defineProps<{
   title: string
   description: string
   img: string
+  link:string
 }>()
+
+function toLink(link: string) {
+  window.open(link, '_blank')
+}
 </script>
 
 <template>
-  <div class="flex flex-col flex-1 py-6 pr-8 pl-3.5 rounded-3xl border border-solid backdrop-blur-[2px] bg-black bg-opacity-30 border-white border-opacity-50"
+  <div @click="toLink(link)" class="flex transition duration-300 ease-in-out hover:scale-105 cursor-pointer flex-col flex-1 py-6 pr-8 pl-3.5 rounded-3xl border border-solid backdrop-blur-[2px] bg-black bg-opacity-30 border-white border-opacity-50"
   >
     <div class="w-fit p-2 rounded-full bg-white bg-opacity-20">
       <img
@@ -24,6 +29,3 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
-
-</style>

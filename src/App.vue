@@ -13,48 +13,57 @@ import {
   uptimeLogo
 } from '@/assets/logo.ts'
 
-const dataForRect: { title: string, description: string, img: string }[] = [
+const dataForRect: { title: string, description: string, img: string, link:string }[] = [
   {
     title: 'Официальный сайт',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: oneSecLogo
+    img: oneSecLogo,
+    link: 'https://onesec.uz'
   },
   {
     title: 'YouTube',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: youtubeLogo
+    img: youtubeLogo,
+    link: 'https://youtube.com/@onesec_uz'
   },
   {
     title: 'Telegram',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: telegramLogo
+    img: telegramLogo,
+    link: 'https://t.me/onesec'
   },
   {
     title: 'Telegram Bot',
     description: 'Посетите наш официальный сайт, чтобы узнать больше о нас!',
-    img: robotLogo
+    img: robotLogo,
+    link: 'https://t.me/onesec_bot'
   }]
-const dataForLong: { title: string, description: string, img: string }[] = [
+const dataForLong: { title: string, description: string, img: string,link:string }[] = [
   {
     title: 'SiteUptime',
     description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
-    img: uptimeLogo
+    img: uptimeLogo,
+    link: 'https://siteuptime.uz'
   }, {
     title: 'Scam.uz',
     description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
-    img: scamLogo
+    img: scamLogo,
+    link: 'https://scam.uz'
   }, {
     title: 'Malscan',
     description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
-    img: mascanLogo
+    img: mascanLogo,
+    link: 'https://malscan.uz'
   }, {
     title: 'Tmail.uz',
     description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
-    img: tmailLogo
+    img: tmailLogo,
+    link: 'https://tmail.uz'
   }, {
     title: 'Upfile',
     description: 'Сервис доступности и мониторинга серверов, веб-сайтов, сервисов, доменов.',
-    img: upfileLogo
+    img: upfileLogo,
+    link: 'https://upfile.uz'
   }
 ]
 </script>
@@ -73,13 +82,13 @@ const dataForLong: { title: string, description: string, img: string }[] = [
     </div>
     <div class="grid grid-cols-2 gap-2">
       <div v-for="data in dataForRect">
-        <Card :description="data.description" :title="data.title" :img="data.img"/>
+        <Card :description="data.description" :link="data.link" :title="data.title" :img="data.img"/>
       </div>
     </div>
     <div class="text-4xl font-bold text-center text-white py-12">Наши сервисы</div>
 
     <div class="space-y-6 last:mb-16">
-      <CardLong v-for="data in dataForLong" :title="data.title" :img="data.img" :description="data.description"/>
+      <CardLong v-for="data in dataForLong" :title="data.title" :link="data.link" :img="data.img" :description="data.description"/>
     </div>
   </div>
 </template>

@@ -3,12 +3,16 @@ defineProps<{
   title: string
   description: string
   img: string
+  link:string
 }>()
+function toLink(link: string) {
+  window.open(link, '_blank')
+}
 </script>
 
 <template>
-  <div
-      class="flex gap-5 bg-transparent justify-between px-11 py-7 text-white rounded-3xl border border-solid backdrop-blur-[5px] bg-black bg-opacity-50 border-white border-opacity-70"
+  <div @click="toLink(link)"
+      class="flex transition duration-300 ease-in-out hover:scale-105 cursor-pointer gap-5 bg-transparent justify-between px-10 py-7 text-white rounded-3xl border border-solid backdrop-blur-[5px] bg-black bg-opacity-50 border-white border-opacity-70"
   >
     <img
         alt="onesec-logo-sm"
